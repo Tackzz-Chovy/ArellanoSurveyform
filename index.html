@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSIT Major Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo-container">
+      <img src="download.jpg" alt="University of the Cordilleras Logo" id="logo">
+    </div>
+    <h1 id="title">BSIT Major Survey</h1>
+    <p id="description">We would like to know more about your preferences and specialization choices in the BSIT program.</p>
+  </header>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+    <label for="email" id="email-label">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+    <label for="dropdown">What is your specialization?</label>
+    <select id="dropdown" name="specialization" required>
+      <option value="web-development">Web Development</option>
+      <option value="network-security">Network Security</option>
+      <option value="data-analytics">Data Analytics</option>
+      <option value="multimedia-arts">Multimedia Arts</option>
+    </select>
+
+    <fieldset>
+      <legend>What is your experience level in your chosen specialization?</legend>
+      <label>
+        <input type="radio" name="experience" value="beginner" required> Beginner
+      </label>
+      <label>
+        <input type="radio" name="experience" value="intermediate" required> Intermediate
+      </label>
+      <label>
+        <input type="radio" name="experience" value="advanced" required> Advanced
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What skills do you have or want to develop in your specialization?</legend>
+      <label>
+        <input type="checkbox" name="skills" value="html-css"> HTML/CSS
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="javascript"> JavaScript
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="python"> Python
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="network-security"> Network Security Tools
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="data-analytics"> Data Visualization
+      </label>
+      <label>
+        <input type="checkbox" name="skills" value="multimedia-design"> Multimedia Design
+      </label>
+    </fieldset>
+
+    <label for="comments">Any additional comments or suggestions:</label>
+    <textarea id="comments" name="comments" placeholder="Write any comments here" rows="4"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
